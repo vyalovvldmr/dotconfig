@@ -1,24 +1,24 @@
 [alias]
-	st = status --short
-	co = checkout
-	ci = commit
-	br = branch
-	df = diff
-	p = pull
-	unstage = reset HEAD
-	# undo last commit
+    st = status --short
+    co = checkout
+    ci = commit
+    br = branch
+    df = diff
+    p = pull
+    unstage = reset HEAD
+    # undo last commit
     undo = reset --soft HEAD^
-	# interactive rebase
-	ir = !sh -c 'git rebase -i origin/${1-master}' -
-	# files different from main on current branch
+    # interactive rebase
+    ir = !sh -c 'git rebase -i origin/${1-master}' -
+    # files different from main on current branch
     fdm = !git diff --name-status origin/main..
     # make new branch based on main no matter which branch is checked out
     spawn = !sh -c 'git checkout -b $1 main && git config branch.$1.merge refs/heads/$1 && git config branch.$1.remote origin' - 
     # Checks out main and does a non-forced delete on the branch entered
     del = !git co main && sh -c 'git br -d $1' -
-	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 [pull]
-	rebase = true
+    rebase = true
 [color "status"]
    added = cyan
    changed = green

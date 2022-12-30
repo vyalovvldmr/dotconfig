@@ -17,8 +17,7 @@ My working environment configs. macOS specific. Tested in Monterey.
     ```
     git clone https://github.com/vyalovvldmr/configs.git /Users/$USER/.config
     ```
-1. Copy git config
+1. Init git config
     ```
-    cd /Users/$USER/.config
-    cp git/.gitconfig ~/.gitconfig
+    make init
     ```
