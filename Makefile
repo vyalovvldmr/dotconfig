@@ -3,8 +3,10 @@ install:
 	brew install --cask font-jetbrains-mono
 	brew install --cask alacritty
 	brew install zellij
+	brew install starship
 
 init:
+	@echo "eval \"$$(starship init zsh)\"" >> ~/.zshrc
 	@cp git/.gitconfig ~/.gitconfig
 	@echo "Type username for git: "; \
 	read USERNAME; \
