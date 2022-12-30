@@ -1,3 +1,25 @@
+window:
+  padding:
+    x: 20
+    y: 15
+  decorations: buttonless
+  startup_mode: Fullscreen
+
+font:
+  normal:
+    family: JetBrains Mono NL
+    style: Light
+  bold:
+    family: JetBrains Mono NL
+    style: Light Italic
+  italic:
+    family: JetBrains Mono NL
+    style: Bold
+  bold_italic:
+    family: JetBrains Mono NL
+    style: Bold Italic
+  size: 14
+
 key_bindings:
   - { key: Comma,     mods: Command,      command: { program: "/Applications/Alacritty.app/Contents/MacOS/alacritty", args: ["-e", "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl", "~/.config/alacritty/alacritty.yml"] }} # Open Settings
   - { key: N,         mods: Command,      action: SpawnNewInstance       } # Open new window
