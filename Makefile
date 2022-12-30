@@ -1,3 +1,9 @@
+install:
+	brew tap homebrew/cask-fonts
+	brew install --cask font-jetbrains-mono
+	brew install --cask alacritty
+	brew install zellij
+
 init:
 	@cp git/.gitconfig ~/.gitconfig
 	@echo "Type username for git: "; \
