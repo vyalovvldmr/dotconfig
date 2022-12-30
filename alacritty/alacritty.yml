@@ -1,0 +1,8 @@
+key_bindings:
+  - { key: Comma,     mods: Command,      command: {program: "sh", args: ["-c","open ~/.config/alacritty/alacritty.yml"]}} # Open Settings
+  - { key: N,         mods: Command,      action: SpawnNewInstance       } # Open new window
+  - { key: Back,      mods: Super,        chars: "\x15"                  } # Delete word/line
+  - { key: Left,      mods: Alt,          chars: "\x1bb"                 } # One word left
+  - { key: Right,     mods: Alt,          chars: "\x1bf"                 } # One word right
+  - { key: Left,      mods: Command,      chars: "\x1bOH"                } # Home
+  - { key: Right,     mods: Command,      chars: "\x1bOF",               } # End
