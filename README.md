@@ -1,5 +1,5 @@
 # Configs
-My working environment configs and install scripts. macOS specific. Tested in Monterey (early 2023).
+My working environment configs and install scripts. macOS and zsh specific. Tested in Monterey (early 2023).
 
 ## Install
 
