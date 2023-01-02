@@ -20,6 +20,8 @@ install:
 	# Install Firefox Developer edition
 	brew tap homebrew/cask-versions
 	brew install --cask firefox-developer-edition
+	# Install KeePassXC
+	brew install --cask keepassxc
 
 init:
 	# Init Git config

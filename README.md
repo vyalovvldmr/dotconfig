@@ -11,7 +11,7 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     ```
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     ```
-1. The following command automates a fresh install of Sublime Text, zsh-autosuggestions, JetBrains fonts, Alacritty terminal, Zellij, Starship, Docker, Firefox Developer edition using homebrew:
+1. The following command automates a fresh install of Sublime Text, zsh-autosuggestions, JetBrains fonts, Alacritty terminal, Zellij, Starship, Docker, Firefox Developer edition, KeePassXC using homebrew:
     ```
     make install
     ```
