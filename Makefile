@@ -1,4 +1,6 @@
 install:
+	# Install Sublime Text
+	brew install --cask sublime-text
 	# Install zsh-autosuggestions
 	git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 	echo "source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
@@ -17,6 +19,7 @@ install:
 	open /Applications/Docker.app
 
 init:
+	# Init Git config
 	@cp git/.gitconfig ~/.gitconfig
 	@echo "Type username for git: "; \
 	read USERNAME; \

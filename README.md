@@ -7,8 +7,8 @@ My working environment configs. macOS specific. Tested in Monterey.
     ```
     git clone https://github.com/vyalovvldmr/configs.git /Users/$USER/.config
     ```
-1. Install [Sublime Text Editor](https://www.sublimetext.com/download_thanks?target=mac) (it's used for editing settings)
-1. Install Alacritty Terminal, Zellij, JetBrains fonts, Starship:
+1. Install Homebrew
+1. The following command automates fresh installation wia homebrew of Sublime Text, zsh-autosuggestions, JetBrains fonts, Alacritty Terminal, Zellij, Starship, Docker:
     ```
     make install
     ```
