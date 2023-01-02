@@ -17,6 +17,9 @@ install:
 	# Install Docker
 	brew install --cask docker
 	open /Applications/Docker.app
+	# Install Firefox Developer edition
+	brew tap homebrew/cask-versions
+	brew install --cask firefox-developer-edition
 
 init:
 	# Init Git config
