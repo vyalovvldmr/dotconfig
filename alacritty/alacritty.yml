@@ -1,7 +1,11 @@
+shell:
+  program: /bin/zsh
+  args:
+    - -l
+    - -c
+    - "zellij"
+
 window:
-  padding:
-    x: 20
-    y: 15
   decorations: buttonless
   startup_mode: Fullscreen
 
