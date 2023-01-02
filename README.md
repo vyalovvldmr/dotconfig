@@ -10,7 +10,7 @@ My working environment configs and install scripts. macOS specific. Tested in Mo
 1. Install Homebrew:
     ```
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    ``
+    ```
 1. The following command automates a fresh install of Sublime Text, zsh-autosuggestions, JetBrains fonts, Alacritty terminal, Zellij, Starship, Docker, Firefox Developer edition using homebrew:
     ```
     make install
