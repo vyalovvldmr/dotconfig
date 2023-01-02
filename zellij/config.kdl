@@ -207,25 +207,25 @@ plugins {
 // Once these themes are defined, one of them should to be selected in the "theme" section of this file
 //
 themes {
-    nord {
-        fg 216 222 233 // #D8DEE9
-        bg 46 52 64 // #2E3440
-        black 59 66 82 // #3B4252
-        red 191 97 106 // #BF616A
-        green 163 190 140 // #A3BE8C
-        yellow 235 203 139 // #EBCB8B
-        blue 129 161 193 // #81A1C1
-        magenta 180 142 173 // #B48EAD
-        cyan 136 192 208 // #88C0D0
-        white 229 233 240 // #E5E9F0
-        orange 208 135 112 // #D08770
+    onedark {
+        fg 171 178 191
+        bg 30 33 39
+        black 30 33 39
+        red 224 108 117
+        green 152 195 121
+        yellow 209 154 102
+        blue 97 175 239
+        magenta 198 120 221
+        cyan 86 182 194
+        white 171 178 191
+        orange 216 133 76
     }
 }
 
 // Choose the theme that is specified in the themes section.
 // Default: default
 //
-theme "nord"
+theme "onedark"
 
 // The name of the default layout to load on startup
 // Default: "default"
