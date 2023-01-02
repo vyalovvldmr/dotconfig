@@ -1,5 +1,5 @@
 # Configs
-My working environment configs. macOS specific. Tested in Monterey.
+My working environment configs and install scripts. macOS specific. Tested in Monterey.
 
 ## Install
 
@@ -8,7 +8,7 @@ My working environment configs. macOS specific. Tested in Monterey.
     git clone https://github.com/vyalovvldmr/configs.git /Users/$USER/.config
     ```
 1. Install Homebrew
-1. The following command automates fresh installation wia homebrew of Sublime Text, zsh-autosuggestions, JetBrains fonts, Alacritty Terminal, Zellij, Starship, Docker:
+1. The following command automates a fresh install of Sublime Text, zsh-autosuggestions, JetBrains fonts, Alacritty terminal, Zellij, Starship, Docker using homebrew:
     ```
     make install
     ```
