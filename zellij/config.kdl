@@ -6,7 +6,7 @@ keybinds {
     }
     locked {
         bind "Alt g" { SwitchToMode "Normal"; }
-        bind "Ctrl g" {}  // Cancel defaul binding
+        bind "Ctrl g" {}  // Cancel default binding
     }
     resize {
         bind "Ctrl n" { SwitchToMode "Normal"; }
@@ -134,7 +134,7 @@ keybinds {
     }
     shared_except "locked" {
         bind "Alt g" { SwitchToMode "Locked"; }
-        bind "Ctrl g" {}  // Cancel defaul binding
+        bind "Ctrl g" {}  // Cancel default binding
         bind "Ctrl q" { Quit; }
         bind "Alt n" { NewPane; }
         bind "Alt h" "Alt Left" { MoveFocusOrTab "Left"; }
