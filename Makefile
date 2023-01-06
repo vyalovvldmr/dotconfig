@@ -24,6 +24,7 @@ install:
 	brew install --cask keepassxc
 	# Install neovim
 	brew install neovim
+	echo "alias vi=/opt/homebrew/bin/nvim" >> ~/.zshrc
 
 init:
 	# Init Git config
