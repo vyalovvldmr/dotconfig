@@ -5,7 +5,8 @@ keybinds {
         // bind "Alt c" { Copy; }
     }
     locked {
-        bind "Ctrl g" { SwitchToMode "Normal"; }
+        bind "Alt g" { SwitchToMode "Normal"; }
+        bind "Ctrl g" {}  // Cancel defaul binding
     }
     resize {
         bind "Ctrl n" { SwitchToMode "Normal"; }
@@ -132,7 +133,8 @@ keybinds {
         bind "d" { Detach; }
     }
     shared_except "locked" {
-        bind "Ctrl g" { SwitchToMode "Locked"; }
+        bind "Alt g" { SwitchToMode "Locked"; }
+        bind "Ctrl g" {}  // Cancel defaul binding
         bind "Ctrl q" { Quit; }
         bind "Alt n" { NewPane; }
         bind "Alt h" "Alt Left" { MoveFocusOrTab "Left"; }
