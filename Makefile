@@ -22,6 +22,8 @@ install:
 	brew install --cask firefox-developer-edition
 	# Install KeePassXC
 	brew install --cask keepassxc
+	# Install neovim
+	brew install neovim
 
 init:
 	# Init Git config
