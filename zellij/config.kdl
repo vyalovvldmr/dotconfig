@@ -1,12 +1,12 @@
 // If you'd like to override the default keybindings completely, be sure to change "keybinds" to "keybinds clear-defaults=true"
 keybinds {
+    unbind "Ctrl g"
     normal {
         // uncomment this and adjust key if using copy_on_select=false
         // bind "Alt c" { Copy; }
     }
     locked {
         bind "Alt g" { SwitchToMode "Normal"; }
-        bind "Ctrl g" {}  // Cancel default binding
     }
     resize {
         bind "Ctrl n" { SwitchToMode "Normal"; }
@@ -134,7 +134,6 @@ keybinds {
     }
     shared_except "locked" {
         bind "Alt g" { SwitchToMode "Locked"; }
-        bind "Ctrl g" {}  // Cancel default binding
         bind "Ctrl q" { Quit; }
         bind "Alt n" { NewPane; }
         bind "Alt h" "Alt Left" { MoveFocusOrTab "Left"; }
