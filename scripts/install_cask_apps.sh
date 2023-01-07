@@ -23,3 +23,6 @@ brew install --cask keepassxc
 
 # Install Telegram
 brew install --cask telegram
+
+# Install Obsidian
+brew install --cask obsidian

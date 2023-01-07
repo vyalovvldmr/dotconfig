@@ -26,6 +26,7 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     - Docker
     - Firefox Developer edition
     - KeePassXC
+    - Obsidian
 
     using homebrew
     ```
