@@ -23,6 +23,7 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     - KeePassXC
     - neovim
     - htop
+    - pyenv
 
     using homebrew
     ```

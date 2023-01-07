@@ -27,6 +27,11 @@ install:
 	echo "alias vi=/opt/homebrew/bin/nvim" >> ~/.zshrc
 	# Install htop
 	brew install htop
+	# Install pyenv
+	brew install pyenv
+	echo 'PATH=$(pyenv root)/shims:$PATH' >> ~/.zshrc
+	pyenv install 3.11.1
+	pyenv global 3.11.1
 
 init:
 	# Init Git config
