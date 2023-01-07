@@ -6,7 +6,7 @@ install:
 	echo "source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
 	# Install JetBrains fonts
 	brew tap homebrew/cask-fonts
-	brew install --cask font-jetbrains-mono
+	brew install --cask font-meslo-lg-nerd-font
 	# Install Alacritty Terminal
 	brew install --cask alacritty
 	# Install Zellij
