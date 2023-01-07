@@ -14,7 +14,7 @@ My working environment configs and install scripts. macOS and zsh specific. Test
 1. The following command automates a fresh install of:
     - Sublime Text
     - zsh-autosuggestions
-    - JetBrains fonts
+    - Meslo Nerd font
     - Alacritty terminal
     - Zellij
     - Starship
@@ -22,6 +22,7 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     - Firefox Developer edition
     - KeePassXC
     - neovim
+    - htop
 
     using homebrew
     ```

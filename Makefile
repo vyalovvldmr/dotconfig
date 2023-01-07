@@ -4,7 +4,7 @@ install:
 	# Install zsh-autosuggestions
 	git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 	echo "source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
-	# Install JetBrains fonts
+	# Install Meslo Nerd font
 	brew tap homebrew/cask-fonts
 	brew install --cask font-meslo-lg-nerd-font
 	# Install Alacritty Terminal
@@ -25,6 +25,8 @@ install:
 	# Install neovim
 	brew install neovim
 	echo "alias vi=/opt/homebrew/bin/nvim" >> ~/.zshrc
+	# Install htop
+	brew install htop
 
 init:
 	# Init Git config
