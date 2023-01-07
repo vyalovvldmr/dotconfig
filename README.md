@@ -7,24 +7,25 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     ```
     git clone https://github.com/vyalovvldmr/configs.git /Users/$USER/.config
     ```
-1. Install Homebrew:
-    ```
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    ```
 1. The following command automates a fresh install of:
-    - Sublime Text
+
+    cli apps
+    - homebrew
     - zsh-autosuggestions
-    - Meslo Nerd font
-    - Alacritty terminal
-    - Zellij
-    - Starship
-    - Docker
-    - Firefox Developer edition
-    - KeePassXC
+    - zellij
+    - starship
     - neovim
     - htop
     - pyenv
     - rustup
+
+    cask apps
+    - Sublime Text
+    - Meslo Nerd font
+    - Alacritty terminal
+    - Docker
+    - Firefox Developer edition
+    - KeePassXC
 
     using homebrew
     ```
