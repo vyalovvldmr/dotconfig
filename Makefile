@@ -29,9 +29,12 @@ install:
 	brew install htop
 	# Install pyenv
 	brew install pyenv
-	echo 'PATH=$(pyenv root)/shims:$PATH' >> ~/.zshrc
+	echo "PATH=\$$(pyenv root)/shims:\$$PATH" >> ~/.zshrc
 	pyenv install 3.11.1
 	pyenv global 3.11.1
+	# Install rustup
+	brew install rustup
+	rustup-init -y
 
 init:
 	# Init Git config

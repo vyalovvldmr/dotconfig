@@ -24,6 +24,7 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     - neovim
     - htop
     - pyenv
+    - rustup
 
     using homebrew
     ```
