@@ -1,5 +1,7 @@
 #!/bin/bash
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Install Sublime Text
 brew install --cask sublime-text
 

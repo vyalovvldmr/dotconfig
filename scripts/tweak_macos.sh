@@ -24,13 +24,13 @@ sudo systemsetup -f -setremotelogin off > /dev/null
 softwareupdate --schedule on
 
 # # Check for software updates daily, not just once per week
-defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
+# defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
 # Download newly available updates in background
-defaults write com.apple.SoftwareUpdate AutomaticDownload -int 1
+# defaults write com.apple.SoftwareUpdate AutomaticDownload -int 1
 
 # Install System data files & security updates
-defaults write com.apple.SoftwareUpdate CriticalUpdateInstall -int 1
+# defaults write com.apple.SoftwareUpdate CriticalUpdateInstall -int 1
 
 # Limit ad tracking
 defaults write com.apple.AdLib forceLimitAdTracking -bool true
@@ -121,14 +121,14 @@ defaults write -g AppleKeyboardUIMode -int 3
 defaults write -g ApplePressAndHoldEnabled -bool false
 
 # Turn on App Expose
-defaults write -g showAppExposeGestureEnabled -bool true
+# defaults write -g showAppExposeGestureEnabled -bool true
 
 # Set a blazingly fast keyboard repeat rate, and make it happen more quickly.
 defaults write -g InitialKeyRepeat -int 15
 defaults write -g KeyRepeat -int 2
 
 # Turn off keyboard illumination when computer is not used for 5 minutes
-defaults write com.apple.BezelServices kDimTime -int 300
+# defaults write com.apple.BezelServices kDimTime -int 300
 
 # Enable trackpad three finger drag
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
@@ -155,15 +155,8 @@ sudo pmset -c sleep 0
 # Set machine sleep to 20 minutes on battery
 sudo pmset -b sleep 20
 
-# Hibernation mode
-# 0:  Disable hibernation (speeds up entering sleep mode)
-# 3:  Copy RAM to disk so the system state can still be restored in case of a
-#     power failure.
-# 25: Hibernation mode
-sudo pmset -a hibernatemode 3
-
 # Enable subpixel font rendering on non-Apple LCDs
-defaults write -g AppleFontSmoothing -int 1
+# defaults write -g AppleFontSmoothing -int 1
 
 ###############################################################################
 # Input check                                                                 #
@@ -189,7 +182,7 @@ defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
 ###############################################################################
 
 # Increase sound quality for Bluetooth headphones/headsets
-defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
+# defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
 
 # Show remaining battery percentage
 defaults write com.apple.controlcenter.plist BatteryShowPercentage -bool true
@@ -201,7 +194,7 @@ defaults write com.apple.controlcenter.plist Bluetooth -int 18
 defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM HH:mm"
 
 # Jump to the spot that's clicked in scroll bar
-defaults write -g AppleScrollerPagingBehavior -int 1
+# defaults write -g AppleScrollerPagingBehavior -int 1
 
 # Expand save panel by default
 defaults write -g NSNavPanelExpandedStateForSaveMode -bool true
@@ -215,7 +208,7 @@ defaults write -g PMPrintingExpandedStateForPrint2 -bool true
 # defaults write com.apple.screencapture disable-shadow -bool true
 
 # Change default location for screenshots
-mkdir $HOME/screenshots
+mkdir -p $HOME/screenshots
 defaults write com.apple.screencapture location -string "$HOME/screenshots"
 
 # Disable the startup chime on boot
@@ -232,8 +225,8 @@ defaults write -g NSWindowResizeTime -float 0.001
 defaults write -g AppleShowScrollBars -string "Always"
 
 # Require password immediately after sleep or screen saver begins
-defaults write com.apple.screensaver askForPassword -int 1
-defaults write com.apple.screensaver askForPasswordDelay -int 0
+# defaults write com.apple.screensaver askForPassword -int 1
+# defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 ###############################################################################
 # Finder                                                                      #
@@ -243,14 +236,14 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 # defaults write com.apple.finder QuitMenuItem -bool true
 
 # Finder: allow text selection in Quick Look
-defaults write com.apple.finder QLEnableTextSelection -bool true
+# defaults write com.apple.finder QLEnableTextSelection -bool true
 
 # Show tab bar
-defaults write com.apple.finder ShowTabView -bool true
+# defaults write com.apple.finder ShowTabView -bool true
 
 # Show preview pane
-defaults write com.apple.finder ShowPreviewPane -bool true
-defaults write com.apple.finder PreviewPaneWidth -int 172
+# defaults write com.apple.finder ShowPreviewPane -bool true
+# defaults write com.apple.finder PreviewPaneWidth -int 172
 
 # Set sidebar width
 defaults write com.apple.finder SidebarWidth -int 172
@@ -317,6 +310,9 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
   OpenWith -bool true \
   Privileges -bool true
 
+# Show hidden files
+defaults write com.apple.finder AppleShowAllFiles -bool true
+
 ###############################################################################
 # Dock                                                                        #
 ###############################################################################
@@ -324,8 +320,8 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 # Put the Dock on the left of the screen
 defaults write com.apple.dock "orientation" -string "left"
 
-# Autohide the Dock when the mouse is out (Turned off)
-defaults write com.apple.dock "autohide" -bool "false"
+# Autohide the Dock when the mouse is out
+defaults write com.apple.dock "autohide" -bool "true"
 
 # Remove the Dock autohide animation
 defaults write com.apple.dock "autohide-time-modifier" -float "0"
@@ -333,8 +329,8 @@ defaults write com.apple.dock "autohide-time-modifier" -float "0"
 # Remove the autohide delay, the Dock appears instantly
 defaults write com.apple.dock "autohide-delay" -float "0"
 
-# Set the icon size of Dock items to 36 pixels
-defaults write com.apple.dock tilesize -int 36
+# Set the icon size of Dock items to 42 pixels
+defaults write com.apple.dock tilesize -int 42
 
 # Change minimize/maximize window effect
 defaults write com.apple.dock mineffect -string "scale"
@@ -347,9 +343,6 @@ defaults write com.apple.dock mru-spaces -bool false
 
 # Don’t show recent applications in Dock
 defaults write com.apple.dock show-recents -bool false
-
-# Disable the Launchpad gesture (pinch with thumb and three fingers)
-# defaults write com.apple.dock showLaunchpadGestureEnabled -int 0
 
 # Make Dock icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool true
@@ -443,11 +436,11 @@ defaults write com.apple.Safari WebKitPreferences.developerExtrasEnabled -bool t
 defaults write com.apple.Safari.SandboxBroker ShowDevelopMenu -bool true
 
 # Update extensions automatically
-defaults write com.apple.Safari InstallExtensionUpdatesAutomatically -bool true
+# defaults write com.apple.Safari InstallExtensionUpdatesAutomatically -bool true
 
 # Block pop-up windows
-defaults write com.apple.Safari WebKitJavaScriptCanOpenWindowsAutomatically -bool false
-defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2JavaScriptCanOpenWindowsAutomatically -bool false
+# defaults write com.apple.Safari WebKitJavaScriptCanOpenWindowsAutomatically -bool false
+# defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2JavaScriptCanOpenWindowsAutomatically -bool false
 
 ###############################################################################
 # Applications                                                                #
