@@ -92,7 +92,7 @@ sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setglobalstate on > /dev/
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on > /dev/null
 
 # Home directory is opened in the fileviewer dialog when saving a new document instead of iCloud Documents
-defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+defaults write -g NSDocumentSaveNewDocumentsToCloud -bool false
 
 # Disable handoff between Mac and nearby iCloud devices
 defaults write ~/Library/Preferences/ByHost/com.apple.coreservices.useractivityd.plist ActivityAdvertisingAllowed -bool false
@@ -106,23 +106,26 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 ###############################################################################
 
 # Trackpad tracking speed
-defaults write NSGlobalDomain com.apple.trackpad.scaling -float 2
+defaults write -g com.apple.trackpad.scaling -float 2
 
 # Trackpad: enable tap to click for this user and for the login screen
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
-defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults -currentHost write -g com.apple.mouse.tapBehavior -int 1
+defaults write -g com.apple.mouse.tapBehavior -int 1
 
 # Enable full keyboard access for all controls
 # (e.g. enable Tab in modal dialogs)
-defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+defaults write -g AppleKeyboardUIMode -int 3
 
 # Disable press-and-hold for keys in favor of key repeat
-defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+defaults write -g ApplePressAndHoldEnabled -bool false
+
+# Turn on App Expose
+defaults write -g showAppExposeGestureEnabled -bool true
 
 # Set a blazingly fast keyboard repeat rate, and make it happen more quickly.
-defaults write NSGlobalDomain InitialKeyRepeat -int 20
-defaults write NSGlobalDomain KeyRepeat -int 1
+defaults write -g InitialKeyRepeat -int 15
+defaults write -g KeyRepeat -int 2
 
 # Turn off keyboard illumination when computer is not used for 5 minutes
 defaults write com.apple.BezelServices kDimTime -int 300
@@ -130,14 +133,14 @@ defaults write com.apple.BezelServices kDimTime -int 300
 # Enable trackpad three finger drag
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
-defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerDragGesture -bool true
-defaults write NSGlobalDomain com.apple.trackpad.threeFingerDragGesture -bool true
+defaults -currentHost write -g com.apple.trackpad.threeFingerDragGesture -bool true
+defaults write -g com.apple.trackpad.threeFingerDragGesture -bool true
 
 # Disable lookup & data detectors (three finger tap)
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerTapGesture -bool false
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerTapGesture -bool false
-defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerTapGesture -bool false
-defaults write NSGlobalDomain com.apple.trackpad.threeFingerTapGesture -bool false
+defaults -currentHost write -g com.apple.trackpad.threeFingerTapGesture -bool false
+defaults write -g com.apple.trackpad.threeFingerTapGesture -bool false
 
 ###############################################################################
 # Display & Power                                                             #
@@ -157,29 +160,29 @@ sudo pmset -b sleep 20
 # 3:  Copy RAM to disk so the system state can still be restored in case of a
 #     power failure.
 # 25: Hibernation mode
-sudo pmset -a hibernatemode 25
+sudo pmset -a hibernatemode 3
 
 # Enable subpixel font rendering on non-Apple LCDs
-defaults write NSGlobalDomain AppleFontSmoothing -int 1
+defaults write -g AppleFontSmoothing -int 1
 
 ###############################################################################
 # Input check                                                                 #
 ###############################################################################
 
 # Disable automatic capitalization as it’s annoying when typing code
-defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
+defaults write -g NSAutomaticCapitalizationEnabled -bool false
 
 # Disable smart dashes as they’re annoying when typing code
-defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+defaults write -g NSAutomaticDashSubstitutionEnabled -bool false
 
 # Disable automatic period substitution as it’s annoying when typing code
-defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
+defaults write -g NSAutomaticPeriodSubstitutionEnabled -bool false
 
 # Disable smart quotes as they’re annoying when typing code
-defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+defaults write -g NSAutomaticQuoteSubstitutionEnabled -bool false
 
 # Disable autocorrect
-defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
 
 ###############################################################################
 # General Tweaks                                                              #
@@ -198,15 +201,15 @@ defaults write com.apple.controlcenter.plist Bluetooth -int 18
 defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM HH:mm"
 
 # Jump to the spot that's clicked in scroll bar
-defaults write NSGlobalDomain AppleScrollerPagingBehavior -int 1
+defaults write -g AppleScrollerPagingBehavior -int 1
 
 # Expand save panel by default
-defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
-defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
+defaults write -g NSNavPanelExpandedStateForSaveMode -bool true
+defaults write -g NSNavPanelExpandedStateForSaveMode2 -bool true
 
 # Expand print panel by default
-defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
-defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
+defaults write -g PMPrintingExpandedStateForPrint -bool true
+defaults write -g PMPrintingExpandedStateForPrint2 -bool true
 
 # Disable shadow in screenshots
 # defaults write com.apple.screencapture disable-shadow -bool true
@@ -223,10 +226,10 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 
 # Increase window resize speed for Cocoa applications
-defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
+defaults write -g NSWindowResizeTime -float 0.001
 
 # Always show scrollbars
-defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
+defaults write -g AppleShowScrollBars -string "Always"
 
 # Require password immediately after sleep or screen saver begins
 defaults write com.apple.screensaver askForPassword -int 1
@@ -269,7 +272,7 @@ defaults write com.apple.finder ShowMountedServersOnDesktop -bool false
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
 
 # Show all filename extensions
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+defaults write -g AppleShowAllExtensions -bool true
 
 # Display full POSIX path as Finder window title
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
@@ -290,7 +293,7 @@ defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
 # Enable spring loading for directories
-defaults write NSGlobalDomain com.apple.springing.enabled -bool true
+defaults write -g com.apple.springing.enabled -bool true
 
 # Enable snap-to-grid for icons on the desktop and in other icon views
 /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
@@ -321,8 +324,8 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 # Put the Dock on the left of the screen
 defaults write com.apple.dock "orientation" -string "left"
 
-# Autohide the Dock when the mouse is out
-defaults write com.apple.dock "autohide" -bool "true"
+# Autohide the Dock when the mouse is out (Turned off)
+defaults write com.apple.dock "autohide" -bool "false"
 
 # Remove the Dock autohide animation
 defaults write com.apple.dock "autohide-time-modifier" -float "0"
@@ -350,6 +353,9 @@ defaults write com.apple.dock show-recents -bool false
 
 # Make Dock icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool true
+
+# Remove all apps from Dock
+defaults write com.apple.dock persistent-apps -array
 
 ###############################################################################
 # Safari                                                                      #
