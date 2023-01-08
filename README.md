@@ -1,5 +1,5 @@
 # Configs
-My working environment configs and install scripts. macOS and zsh specific. Tested in Monterey (early 2023).
+My working environment configs and install scripts. macOS and zsh specific. Tested in Monterey 12.6.2.
 
 ## Install
 
@@ -12,7 +12,7 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     make tweaks
     ```
 1. Reboot system
-1. The following command automates a fresh install of:
+1. The following command automates the installation of applications using homebrew:
 
     cli apps
     - homebrew
@@ -33,7 +33,6 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     - KeePassXC
     - Obsidian
 
-    using homebrew
     ```
     make install
     ```
