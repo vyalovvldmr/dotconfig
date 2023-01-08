@@ -8,9 +8,8 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     git clone https://github.com/vyalovvldmr/configs.git /Users/$USER/.config
     ```
 1. Tweak macOS:
-    - Disable the “Are you sure you want to open this application?” dialog
     ```
-    make tweak
+    make tweaks
     ```
 1. Reboot system
 1. The following command automates a fresh install of:

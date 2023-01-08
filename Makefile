@@ -1,4 +1,4 @@
-tweak:
+tweaks:
 	sh scripts/tweak_macos.sh
 
 install:
