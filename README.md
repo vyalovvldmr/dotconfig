@@ -12,7 +12,7 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     make tweaks
     ```
 1. Reboot system
-1. The following command automates the installation of applications using homebrew:
+1. The following command automates an installation of applications using homebrew:
 
     cli apps
     - homebrew
