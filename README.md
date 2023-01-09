@@ -33,6 +33,7 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     - Firefox Developer edition
     - KeePassXC
     - Obsidian
+    - VLC
 
     ```
     make install

@@ -30,3 +30,6 @@ brew install --cask telegram
 
 # Install Obsidian
 brew install --cask obsidian
+
+# Install VLC
+brew install --cask vlc

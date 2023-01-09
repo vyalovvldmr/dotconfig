@@ -9,9 +9,6 @@ osascript -e 'tell application "System Preferences" to quit'
 # Ask for the administrator password upfront
 sudo -v
 
-# Keep-alive: update existing `sudo` time stamp until `.macos` has finished
-while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
-
 
 ###############################################################################
 # Privacy & Security                                                          #
@@ -19,18 +16,6 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # # Disable remote login
 sudo systemsetup -f -setremotelogin off > /dev/null
-
-# # Enable automatic software update checks
-softwareupdate --schedule on
-
-# # Check for software updates daily, not just once per week
-# defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
-
-# Download newly available updates in background
-# defaults write com.apple.SoftwareUpdate AutomaticDownload -int 1
-
-# Install System data files & security updates
-# defaults write com.apple.SoftwareUpdate CriticalUpdateInstall -int 1
 
 # Limit ad tracking
 defaults write com.apple.AdLib forceLimitAdTracking -bool true
@@ -156,7 +141,7 @@ sudo pmset -c sleep 0
 sudo pmset -b sleep 20
 
 # Enable subpixel font rendering on non-Apple LCDs
-# defaults write -g AppleFontSmoothing -int 1
+defaults write -g AppleFontSmoothing -int 1
 
 ###############################################################################
 # Input check                                                                 #
@@ -224,10 +209,6 @@ defaults write -g NSWindowResizeTime -float 0.001
 # Always show scrollbars
 defaults write -g AppleShowScrollBars -string "Always"
 
-# Require password immediately after sleep or screen saver begins
-# defaults write com.apple.screensaver askForPassword -int 1
-# defaults write com.apple.screensaver askForPasswordDelay -int 0
-
 ###############################################################################
 # Finder                                                                      #
 ###############################################################################
@@ -236,14 +217,10 @@ defaults write -g AppleShowScrollBars -string "Always"
 # defaults write com.apple.finder QuitMenuItem -bool true
 
 # Finder: allow text selection in Quick Look
-# defaults write com.apple.finder QLEnableTextSelection -bool true
+defaults write com.apple.finder QLEnableTextSelection -bool true
 
 # Show tab bar
 # defaults write com.apple.finder ShowTabView -bool true
-
-# Show preview pane
-# defaults write com.apple.finder ShowPreviewPane -bool true
-# defaults write com.apple.finder PreviewPaneWidth -int 172
 
 # Set sidebar width
 defaults write com.apple.finder SidebarWidth -int 172
@@ -254,9 +231,8 @@ defaults write com.apple.finder ShowRecentTags -bool false
 # Disable window animations and Get Info animations
 defaults write com.apple.finder DisableAllAnimations -bool true
 
-# Set root / as the default location for new Finder windows
+# Set home as the default location for new Finder windows
 defaults write com.apple.finder NewWindowTarget -string "PfVo"
-defaults write com.apple.finder NewWindowTargetPath -string "file:///"
 
 # Don't show icons for hard drives, servers, and removable media on the desktop
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
@@ -293,9 +269,9 @@ defaults write -g com.apple.springing.enabled -bool true
 /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 
-# Use list view in all Finder windows by default
+# Use column view in all Finder windows by default
 # Four-letter codes for the other view modes: `icnv`, `clmv`, `glyv`
-defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
+defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
 
 # Show the ~/Library folder
 chflags nohidden ~/Library && xattr -d com.apple.FinderInfo ~/Library 2>/dev/null
@@ -303,10 +279,11 @@ chflags nohidden ~/Library && xattr -d com.apple.FinderInfo ~/Library 2>/dev/nul
 # Show the /Volumes folder
 sudo chflags nohidden /Volumes
 
-# Expand the following File Info panes:
-# “General”, “Open with”, and “Sharing & Permissions”
+# Expand file Info panes
 defaults write com.apple.finder FXInfoPanesExpanded -dict \
   General -bool true \
+  MetaData -bool true \
+  Name -bool true \
   OpenWith -bool true \
   Privileges -bool true
 
@@ -435,12 +412,6 @@ defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool 
 defaults write com.apple.Safari WebKitPreferences.developerExtrasEnabled -bool true
 defaults write com.apple.Safari.SandboxBroker ShowDevelopMenu -bool true
 
-# Update extensions automatically
-# defaults write com.apple.Safari InstallExtensionUpdatesAutomatically -bool true
-
-# Block pop-up windows
-# defaults write com.apple.Safari WebKitJavaScriptCanOpenWindowsAutomatically -bool false
-# defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2JavaScriptCanOpenWindowsAutomatically -bool false
 
 ###############################################################################
 # Applications                                                                #
