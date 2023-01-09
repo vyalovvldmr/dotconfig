@@ -35,6 +35,7 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     - Obsidian
     - VLC
     - Hiddenbar
+    - Maccy
 
     ```
     make install

@@ -38,3 +38,6 @@ brew install --cask vlc
 
 # Install Hiddenbar
 brew install --cask hiddenbar
+
+# Install Maccy
+brew install --cask maccy
