@@ -75,9 +75,6 @@ sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on > /dev/
 # Home directory is opened in the fileviewer dialog when saving a new document instead of iCloud Documents
 # defaults write -g NSDocumentSaveNewDocumentsToCloud -bool false
 
-# Disable handoff between Mac and nearby iCloud devices
-defaults write ~/Library/Preferences/ByHost/com.apple.coreservices.useractivityd.plist ActivityAdvertisingAllowed -bool false
-
 ###############################################################################
 # Trackpad, mouse, keyboard                                                   #
 ###############################################################################
@@ -171,7 +168,7 @@ defaults write -g AppleShowScrollBars -string "Always"
 ###############################################################################
 
 # Allow quitting Finder via ⌘ + Q; doing so will also hide desktop icons
-defaults write com.apple.finder QuitMenuItem -bool true
+# defaults write com.apple.finder QuitMenuItem -bool true
 
 # Finder: allow text selection in Quick Look
 defaults write com.apple.finder QLEnableTextSelection -bool true

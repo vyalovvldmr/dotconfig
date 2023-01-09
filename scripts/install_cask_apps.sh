@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -Eeuxo pipefail
+set -Eeu pipefail
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 

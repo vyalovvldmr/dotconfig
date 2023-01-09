@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -Eeuxo pipefail
+set -Eeu pipefail
 
 if ! [ -x "$(command -v brew)" ]; then
     echo "Installing Homebrew..."
