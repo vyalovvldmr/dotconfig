@@ -2,6 +2,8 @@
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+echo "Installing cask apps..."
+
 # Install Sublime Text
 brew install --cask sublime-text
 
