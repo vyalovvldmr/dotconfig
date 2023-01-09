@@ -7,7 +7,7 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     ```
     git clone https://github.com/vyalovvldmr/configs.git /Users/$USER/.config
     ```
-1. Tweak macOS:
+1. Tweak macOS (tweaks may potentially harm your system, run them at your own risk):
     ```
     make tweaks
     ```
