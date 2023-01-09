@@ -35,3 +35,6 @@ brew install --cask obsidian
 
 # Install VLC
 brew install --cask vlc
+
+# Install Hiddenbar
+brew install --cask hiddenbar

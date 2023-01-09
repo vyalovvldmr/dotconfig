@@ -34,6 +34,7 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     - KeePassXC
     - Obsidian
     - VLC
+    - Hiddenbar
 
     ```
     make install
