@@ -392,5 +392,3 @@ defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 
 printf "Done. Some of these changes require a restart to take effect.\n"
-
-## https://someonewhocares.org/hosts/zero/
