@@ -1,10 +1,6 @@
 #!/bin/bash
 
-echo -e "\n\nChanging macOS settings"
-echo "=============================="
-# Close any open System Preferences panes, to prevent them from overriding
-# settings we’re about to change
-osascript -e 'tell application "System Preferences" to quit'
+echo "Changing macOS settings..."
 
 # Ask for the administrator password upfront
 sudo -v
@@ -77,14 +73,10 @@ sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setglobalstate on > /dev/
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on > /dev/null
 
 # Home directory is opened in the fileviewer dialog when saving a new document instead of iCloud Documents
-defaults write -g NSDocumentSaveNewDocumentsToCloud -bool false
+# defaults write -g NSDocumentSaveNewDocumentsToCloud -bool false
 
 # Disable handoff between Mac and nearby iCloud devices
 defaults write ~/Library/Preferences/ByHost/com.apple.coreservices.useractivityd.plist ActivityAdvertisingAllowed -bool false
-
-# Disable Gatekeeper (the “Are you sure you want to open this application?” dialog)
-sudo spctl --master-disable
-defaults write com.apple.LaunchServices LSQuarantine -bool false
 
 ###############################################################################
 # Trackpad, mouse, keyboard                                                   #
@@ -93,55 +85,23 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 # Trackpad tracking speed
 defaults write -g com.apple.trackpad.scaling -float 2
 
-# Trackpad: enable tap to click for this user and for the login screen
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
-defaults -currentHost write -g com.apple.mouse.tapBehavior -int 1
-defaults write -g com.apple.mouse.tapBehavior -int 1
-
 # Enable full keyboard access for all controls
 # (e.g. enable Tab in modal dialogs)
-defaults write -g AppleKeyboardUIMode -int 3
+# defaults write -g AppleKeyboardUIMode -int 3
 
 # Disable press-and-hold for keys in favor of key repeat
-defaults write -g ApplePressAndHoldEnabled -bool false
-
-# Turn on App Expose
-# defaults write -g showAppExposeGestureEnabled -bool true
+# defaults write -g ApplePressAndHoldEnabled -bool false
 
 # Set a blazingly fast keyboard repeat rate, and make it happen more quickly.
 defaults write -g InitialKeyRepeat -int 15
 defaults write -g KeyRepeat -int 2
 
-# Turn off keyboard illumination when computer is not used for 5 minutes
-# defaults write com.apple.BezelServices kDimTime -int 300
-
-# Enable trackpad three finger drag
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
-defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
-defaults -currentHost write -g com.apple.trackpad.threeFingerDragGesture -bool true
-defaults write -g com.apple.trackpad.threeFingerDragGesture -bool true
-
-# Disable lookup & data detectors (three finger tap)
-defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerTapGesture -bool false
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerTapGesture -bool false
-defaults -currentHost write -g com.apple.trackpad.threeFingerTapGesture -bool false
-defaults write -g com.apple.trackpad.threeFingerTapGesture -bool false
-
 ###############################################################################
-# Display & Power                                                             #
+# Display                                                                     #
 ###############################################################################
-
-# Sleep the display after 5 minutes
-sudo pmset -a displaysleep 5
-
-# Disable machine sleep while charging
-sudo pmset -c sleep 0
-
-# Set machine sleep to 20 minutes on battery
-sudo pmset -b sleep 20
 
 # Enable subpixel font rendering on non-Apple LCDs
-defaults write -g AppleFontSmoothing -int 1
+# defaults write -g AppleFontSmoothing -int 1
 
 ###############################################################################
 # Input check                                                                 #
@@ -178,9 +138,6 @@ defaults write com.apple.controlcenter.plist Bluetooth -int 18
 # Set menubar digital clock format
 defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM HH:mm"
 
-# Jump to the spot that's clicked in scroll bar
-# defaults write -g AppleScrollerPagingBehavior -int 1
-
 # Expand save panel by default
 defaults write -g NSNavPanelExpandedStateForSaveMode -bool true
 defaults write -g NSNavPanelExpandedStateForSaveMode2 -bool true
@@ -214,16 +171,13 @@ defaults write -g AppleShowScrollBars -string "Always"
 ###############################################################################
 
 # Allow quitting Finder via ⌘ + Q; doing so will also hide desktop icons
-# defaults write com.apple.finder QuitMenuItem -bool true
+defaults write com.apple.finder QuitMenuItem -bool true
 
 # Finder: allow text selection in Quick Look
 defaults write com.apple.finder QLEnableTextSelection -bool true
 
 # Show tab bar
 # defaults write com.apple.finder ShowTabView -bool true
-
-# Set sidebar width
-defaults write com.apple.finder SidebarWidth -int 172
 
 # Don't show recent tags
 defaults write com.apple.finder ShowRecentTags -bool false

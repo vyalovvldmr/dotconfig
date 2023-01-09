@@ -42,3 +42,11 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     ```
     make init
     ```
+
+1. Checklist for manual setup
+    - install python with pyenv
+    ```
+    pyenv install <version>
+    pyenv global <version>
+    ```
+    - enable trackpad settings (tap to click, drag and drop with three fingers)

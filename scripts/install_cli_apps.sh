@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -Eeuxo pipefail
+
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 echo "Installing cli apps..."
