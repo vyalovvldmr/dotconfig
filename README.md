@@ -36,6 +36,7 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     - IINA
     - Hiddenbar
     - Maccy
+    - AltTab
 
     ```
     make install

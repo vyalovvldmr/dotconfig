@@ -80,7 +80,7 @@ sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on > /dev/
 ###############################################################################
 
 # Trackpad tracking speed
-defaults write -g com.apple.trackpad.scaling -float 2
+defaults write -g com.apple.trackpad.scaling -float 3
 
 # Enable full keyboard access for all controls
 # (e.g. enable Tab in modal dialogs)
