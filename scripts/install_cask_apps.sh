@@ -50,3 +50,6 @@ brew install --cask the-unarchiver
 
 # Install Amethyst
 brew install --cask amethyst
+
+# Install Hammerspoon
+brew install --cask hammerspoon
