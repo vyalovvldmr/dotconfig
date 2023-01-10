@@ -34,3 +34,6 @@ rustup-init -y
 
 # Install unar
 brew install unar
+
+# Install mc
+brew install mc

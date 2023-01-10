@@ -25,6 +25,7 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     - pyenv
     - rustup
     - unar
+    - mc
 
     cask apps
     - Sublime Text
