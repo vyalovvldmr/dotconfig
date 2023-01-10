@@ -37,3 +37,9 @@ brew install unar
 
 # Install mc
 brew install mc
+
+# Install nmap
+brew install nmap
+
+# Install jq
+brew install jq

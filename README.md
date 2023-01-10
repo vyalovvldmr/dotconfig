@@ -26,6 +26,8 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     - rustup
     - unar
     - mc
+    - nmap
+    - jq
 
     cask apps
     - Sublime Text
