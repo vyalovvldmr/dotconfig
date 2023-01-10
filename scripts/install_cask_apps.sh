@@ -44,3 +44,6 @@ brew install --cask maccy
 
 # Install AltTab
 brew install --cask alt-tab
+
+# Install Raycast
+brew install --cask raycast
