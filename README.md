@@ -24,6 +24,7 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     - htop
     - pyenv
     - rustup
+    - unar
 
     cask apps
     - Sublime Text
@@ -38,6 +39,7 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     - Maccy
     - AltTab
     - Raycast
+    - The Unarchiver
 
     ```
     make install

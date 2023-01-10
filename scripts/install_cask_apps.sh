@@ -47,3 +47,6 @@ brew install --cask alt-tab
 
 # Install Raycast
 brew install --cask raycast
+
+# Install The Unarchiver
+brew install --cask the-unarchiver

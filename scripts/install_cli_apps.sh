@@ -31,3 +31,6 @@ echo "PATH=\$(pyenv root)/shims:\$PATH" >> ~/.zshrc
 # Install rustup
 brew install rustup
 rustup-init -y
+
+# Install unar
+brew install unar
