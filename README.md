@@ -39,6 +39,7 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     - AltTab
     - Raycast
     - The Unarchiver
+    - Amethyst
 
     ```
     make install

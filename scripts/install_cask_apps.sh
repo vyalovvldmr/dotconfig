@@ -47,3 +47,6 @@ brew install --cask raycast
 
 # Install The Unarchiver
 brew install --cask the-unarchiver
+
+# Install Amethyst
+brew install --cask amethyst
