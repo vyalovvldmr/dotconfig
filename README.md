@@ -42,6 +42,7 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     - The Unarchiver
     - Amethyst
     - Hammerspoon
+    - Selfcontrol
 
     ```
     make install

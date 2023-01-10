@@ -53,3 +53,6 @@ brew install --cask amethyst
 
 # Install Hammerspoon
 brew install --cask hammerspoon
+
+# Install Selfcontrol
+brew install --cask selfcontrol
