@@ -39,9 +39,6 @@ brew install --cask iina
 # Install Hiddenbar
 brew install --cask hiddenbar
 
-# Install Maccy
-brew install --cask maccy
-
 # Install AltTab
 brew install --cask alt-tab
 
