@@ -46,3 +46,35 @@ brew install jq
 
 # Install xh
 brew install xh
+
+# Install pgcli
+brew install pgcli
+
+# install exa
+brew install exa
+echo "alias ls=exa" >> ~/.zshrc
+echo "alias ll=\"exa -alh\"" >> ~/.zshrc
+echo "alias tree=\"exa --tree\"" >> ~/.zshrc
+
+# Install bat
+brew install bat
+echo "alias cat=bat" >> ~/.zshrc
+
+# Install fd
+brew install fd
+
+# Install cheat
+brew install cheat
+git clone https://github.com/cheat/cheatsheets.git ~/.config/cheat/community
+
+# Install duf
+brew install duf
+
+# Install dua
+brew install dua-cli
+
+# Install zoxide
+brew install zoxide
+echo "eval \"\$(zoxide init zsh)\"" >> ~/.zshrc
+echo "alias cd=z" >> ~/.zshrc
+echo "alias zz=\"z -\"" >> ~/.zshrc

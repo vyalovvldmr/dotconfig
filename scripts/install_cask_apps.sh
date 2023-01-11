@@ -16,10 +16,6 @@ brew install --cask font-meslo-lg-nerd-font
 # Install Alacritty Terminal
 brew install --cask alacritty
 
-# Install Docker
-brew install --cask docker
-open /Applications/Docker.app
-
 # Install Firefox Developer edition
 brew tap homebrew/cask-versions
 brew install --cask firefox-developer-edition
