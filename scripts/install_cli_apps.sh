@@ -78,3 +78,6 @@ brew install zoxide
 echo "eval \"\$(zoxide init zsh)\"" >> ~/.zshrc
 echo "alias cd=z" >> ~/.zshrc
 echo "alias zz=\"z -\"" >> ~/.zshrc
+
+# Install entr
+brew install entr
