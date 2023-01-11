@@ -43,3 +43,6 @@ brew install nmap
 
 # Install jq
 brew install jq
+
+# Install xh
+brew install xh
