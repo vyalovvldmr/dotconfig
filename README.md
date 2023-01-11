@@ -45,6 +45,7 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     - Amethyst
     - Hammerspoon
     - Selfcontrol
+    - Karabiner-Elements
 
     ```
     make install

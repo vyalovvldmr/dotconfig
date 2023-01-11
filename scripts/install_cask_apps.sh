@@ -56,3 +56,6 @@ brew install --cask hammerspoon
 
 # Install Selfcontrol
 brew install --cask selfcontrol
+
+# Install Karabiner-Elements
+brew install --cask karabiner-elements
