@@ -89,7 +89,7 @@ defaults write -g com.apple.trackpad.scaling -float 3
 # Disable press-and-hold for keys in favor of key repeat
 # defaults write -g ApplePressAndHoldEnabled -bool false
 
-# Set a blazingly fast keyboard repeat rate, and make it happen more quickly.
+# Set a fast keyboard repeat rate, and make it happen more quickly.
 defaults write -g InitialKeyRepeat -int 15
 defaults write -g KeyRepeat -int 2
 
