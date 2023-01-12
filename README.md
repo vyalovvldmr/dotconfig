@@ -38,6 +38,7 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     - dua
     - zoxide
     - entr
+    - fzf
 
     cask apps
     - Sublime Text

@@ -81,3 +81,6 @@ echo "alias zz=\"z -\"" >> ~/.zshrc
 
 # Install entr
 brew install entr
+
+# Install fzf
+brew install fzf
