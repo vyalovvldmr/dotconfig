@@ -55,3 +55,9 @@ brew install --cask selfcontrol
 
 # Install Karabiner-Elements
 brew install --cask karabiner-elements
+
+# Install Slack
+brew install --cask slack
+
+# Install Spark Mail Client
+brew install --cask readdle-spark

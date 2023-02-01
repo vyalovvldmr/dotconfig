@@ -84,3 +84,6 @@ brew install entr
 
 # Install fzf
 brew install fzf
+
+# telnet
+brew install telnet
