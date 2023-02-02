@@ -85,11 +85,5 @@ brew install entr
 # Install fzf
 brew install fzf
 
-# Install telnet
+# telnet
 brew install telnet
-
-# Install cloc
-brew install cloc
-
-# Install dpkg
-brew install dpkg

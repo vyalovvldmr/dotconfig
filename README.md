@@ -40,8 +40,6 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     - entr
     - fzf
     - telnet
-    - dpkg
-    - cloc
 
     cask apps
     - Sublime Text
