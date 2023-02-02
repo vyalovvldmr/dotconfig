@@ -40,6 +40,7 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     - entr
     - fzf
     - telnet
+    - scc
 
     cask apps
     - Sublime Text
@@ -59,6 +60,7 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     - Karabiner-Elements
     - Slack
     - Spark Mail Client
+
 
     ```
     make install

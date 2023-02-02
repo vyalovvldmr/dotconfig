@@ -85,5 +85,8 @@ brew install entr
 # Install fzf
 brew install fzf
 
-# telnet
+# Install telnet
 brew install telnet
+
+# Install scc
+brew install scc
