@@ -90,3 +90,7 @@ brew install telnet
 
 # Install scc
 brew install scc
+
+# Install gnu-sed
+brew install gnu-sed
+echo "alias sed=gsed" >> ~/.zshrc

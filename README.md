@@ -41,6 +41,7 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     - fzf
     - telnet
     - scc
+    - gnu-sed
 
     cask apps
     - Sublime Text
