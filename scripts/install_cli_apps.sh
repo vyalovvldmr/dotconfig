@@ -93,4 +93,4 @@ brew install scc
 
 # Install gnu-sed
 brew install gnu-sed
-echo "alias sed=gsed" >> ~/.zshrc
+echo "PATH=\"\$(brew --prefix)/opt/gnu-sed/libexec/gnubin:\$PATH\"" >> ~/.zshrc

@@ -47,7 +47,7 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     - Sublime Text
     - Meslo Nerd font
     - Alacritty terminal
-    - Firefox Developer edition
+    - Firefox
     - KeePassXC
     - Obsidian
     - IINA

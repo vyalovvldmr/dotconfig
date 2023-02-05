@@ -16,9 +16,8 @@ brew install --cask font-meslo-lg-nerd-font
 # Install Alacritty Terminal
 brew install --cask alacritty
 
-# Install Firefox Developer edition
-brew tap homebrew/cask-versions
-brew install --cask firefox-developer-edition
+# Install Firefox
+brew install --cask firefox
 
 # Install KeePassXC
 brew install --cask keepassxc
