@@ -1,3 +1,10 @@
+shell:
+  program: /bin/zsh
+  args:
+    - -l
+    - -c
+    - "zellij"
+
 window:
   decorations: buttonless
   startup_mode: Maximized
