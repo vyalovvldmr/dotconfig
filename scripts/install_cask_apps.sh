@@ -48,6 +48,7 @@ brew install --cask amethyst
 
 # Install Hammerspoon
 brew install --cask hammerspoon
+defaults write org.hammerspoon.Hammerspoon MJConfigFile "~/.config/hammerspoon/init.lua"
 
 # Install Selfcontrol
 brew install --cask selfcontrol
@@ -66,3 +67,6 @@ brew install --cask monitorcontrol
 
 # Install Latest
 brew install --cask latest
+
+# Install PyCharm CE
+brew install --cask pycharm-ce
