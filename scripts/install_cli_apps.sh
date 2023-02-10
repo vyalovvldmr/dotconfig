@@ -9,6 +9,10 @@ echo "Installing cli apps..."
 # Install zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 echo "source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
+echo "# Fix zsh autosuggestions keybind for arrow keys" >> ~/.zshrc
+echo "zle-line-init() {}" >> ~/.zshrc
+echo "bindkey '\\\e[A' history-beginning-search-backward" >> ~/.zshrc
+echo "bindkey '\\\e[B' history-beginning-search-forward" >> ~/.zshrc
 
 # Install Zellij
 brew install zellij
