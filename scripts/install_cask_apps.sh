@@ -60,3 +60,9 @@ brew install --cask slack
 
 # Install Spark Mail Client
 brew install --cask readdle-spark
+
+# Install Monitor Control
+brew install --cask monitorcontrol
+
+# Install Latest
+brew install --cask latest

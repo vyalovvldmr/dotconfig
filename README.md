@@ -61,8 +61,10 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     - Karabiner-Elements
     - Slack
     - Spark Mail Client
-
-
+    - Monitor Control
+    - Latest
+    &nbsp;
+    &nbsp;
     ```
     make install
     ```
