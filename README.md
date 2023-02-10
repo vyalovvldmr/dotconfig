@@ -63,9 +63,7 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     - Spark Mail Client
     - Monitor Control
     - Latest
-    &nbsp;
-    &nbsp;
-
+    <br/><br/>
     ```
     make install
     ```
