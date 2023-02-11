@@ -1,5 +1,5 @@
 # Configs
-My working environment configs and install scripts. macOS and zsh specific. Tested in Monterey 12.6.2.
+My working environment configs and install scripts. macOS and zsh specific. Tested in Monterey and Ventura.
 
 ## Install
 
@@ -73,3 +73,8 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     make init
     ```
 
+## Checklist
+
+- Turn off Spotlight indexing `Siri & Spotlight` -> `Spotlight privacy` drag&drop Macintosh HD
+- Deactivate Spotlight hotkeys `Keyboard` -> `Keyboard shortcuts` -> `Spotlight`
+- Use capslock for switching input sources `Keyboard` -> `Input Sources` -> `Edit`
