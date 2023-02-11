@@ -79,4 +79,4 @@ My working environment configs and install scripts. macOS and zsh specific. Test
 - Deactivate Spotlight hotkeys `Keyboard` -> `Keyboard shortcuts` -> `Spotlight`
 - Activate Raycast hotkey
 - Use capslock for switching input sources `Keyboard` -> `Input Sources` -> `Edit`
-- Open AltTab, Amethyst, Karabiner-Elements, Monitor Control, Raycast, Hammerspoon and gran access in `Privacy & Security`
+- Open AltTab, Amethyst, Karabiner-Elements, Monitor Control, Raycast, Hammerspoon and grant access in `Privacy & Security`
