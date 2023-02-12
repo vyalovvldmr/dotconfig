@@ -64,6 +64,7 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     - Monitor Control
     - Latest
     - PyCharm CE
+    - DevUtils
     <br/><br/>
     ```
     make install

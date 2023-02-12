@@ -70,3 +70,6 @@ brew install --cask latest
 
 # Install PyCharm CE
 brew install --cask pycharm-ce
+
+# Install DevUtils
+brew install --cask devutils
