@@ -43,8 +43,9 @@ brew install --cask raycast
 # Install The Unarchiver
 brew install --cask the-unarchiver
 
-# Install Amethyst
-brew install --cask amethyst
+# Install Yabai
+brew install koekeishiya/formulae/yabai
+brew services start koekeishiya/formulae/yabai
 
 # Install Hammerspoon
 brew install --cask hammerspoon
