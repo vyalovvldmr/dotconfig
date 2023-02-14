@@ -17,7 +17,7 @@ yabai -m space 7 --label chat
 yabai -m rule --add app="^Firefox$" space=web
 yabai -m rule --add app="^Alacritty$" space=terminal
 yabai -m rule --add app="PyCharm" space=code
-yabai -m rule --add app="^(dev-tools|DevToys|Docker)$" space=devtools
+yabai -m rule --add app="^(dev-tools|DevToys|Docker Desktop)$" space=devtools
 yabai -m rule --add app="^(Obsidian|KeePassXC)$" space=notes
 yabai -m rule --add app="^Spark Desktop$" space=mail
 yabai -m rule --add app="^(Slack|Calendar)$" space=chat
@@ -39,5 +39,6 @@ yabai -m config                              \
     bottom_padding              10           \
     window_gap                  10           \
     split_type                  auto         \
-    auto_balance                true         \
+    auto_balance                on           \
+    mouse_follows_focus         on           \
     layout                      bsp
