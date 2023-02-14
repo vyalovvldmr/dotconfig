@@ -16,9 +16,6 @@ echo "source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-sub
 echo "bindkey '^[[A' history-substring-search-up" >> ~/.zshrc
 echo "bindkey '^[[B' history-substring-search-down" >> ~/.zshrc
 
-# Install Zellij
-brew install zellij
-
 # Install Starship
 brew install starship
 echo "eval \"$(starship init zsh)\"" >> ~/.zshrc

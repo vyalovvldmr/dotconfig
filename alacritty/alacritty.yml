@@ -1,10 +1,3 @@
-shell:
-  program: /bin/zsh
-  args:
-    - -l
-    - -c
-    - "zellij"
-
 window:
   decorations: buttonless
   startup_mode: Maximized
@@ -59,7 +52,6 @@ key_bindings:
     program: /Applications/Alacritty.app/Contents/MacOS/alacritty
   key: Comma
   mods: Command
-- {action: SpawnNewInstance, key: N, mods: Command}
 - {action: ClearHistory, key: K, mode: ~Vi|~Search, mods: Command}
 - {action: ResetFontSize, key: Key0, mods: Command}
 - {action: IncreaseFontSize, key: Equals, mods: Command}

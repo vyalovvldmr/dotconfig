@@ -18,7 +18,6 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     cli apps
     - homebrew
     - zsh-autosuggestions
-    - zellij
     - starship
     - neovim
     - htop
