@@ -78,6 +78,5 @@ My working environment configs and install scripts. macOS and zsh specific. Test
 - Turn off Spotlight indexing `Siri & Spotlight` -> `Spotlight privacy` drag&drop Macintosh HD
 - Deactivate Spotlight hotkeys `Keyboard` -> `Keyboard shortcuts` -> `Spotlight`
 - Activate Raycast hotkey
-- Use capslock for switching input sources `Keyboard` -> `Input Sources` -> `Edit`
-- Open AltTab, Amethyst, Karabiner-Elements, Monitor Control, Raycast, Hammerspoon and grant access in `Privacy & Security`
+- Open AltTab, Karabiner-Elements, Monitor Control, Raycast, Hammerspoon and grant access in `Privacy & Security`
 - Install [Dev Tools X](https://github.com/fosslife/devtools-x) if needed
