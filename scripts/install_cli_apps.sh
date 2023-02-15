@@ -26,6 +26,7 @@ echo "alias vi=/opt/homebrew/bin/nvim" >> ~/.zshrc
 
 # Install htop
 brew install htop
+echo "alias htop=\"sudo htop\"" >> ~/.zshrc
 
 # Install pyenv
 brew install pyenv
