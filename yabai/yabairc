@@ -13,10 +13,10 @@ yabai -m space 6 --label mail
 yabai -m space 7 --label chat
 
 # window rules
-
 yabai -m rule --add app="^Firefox$" space=web
 yabai -m rule --add app="^Alacritty$" space=terminal
-yabai -m rule --add app="PyCharm" space=code
+yabai -m rule --add app="PyCharm" manage=off
+yabai -m rule --add app="PyCharm" title="( – )" space=code manage=on
 yabai -m rule --add app="^(dev-tools|DevToys|Docker Desktop)$" space=devtools
 yabai -m rule --add app="^(Obsidian|KeePassXC)$" space=notes
 yabai -m rule --add app="^Spark Desktop$" space=mail
