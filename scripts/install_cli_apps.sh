@@ -9,6 +9,8 @@ echo "Installing cli apps..."
 # Install zsh-autosuggestions
 brew install zsh-autosuggestions
 echo "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
+echo "export LC_ALL=en_US.UTF-8" >> ~/.zshrc
+echo "export LANG=en_US.UTF-8" >> ~/.zshrc
 
 # Install zsh-history-substring-search
 brew install zsh-history-substring-search
@@ -62,7 +64,8 @@ echo "alias tree=\"exa --tree\"" >> ~/.zshrc
 
 # Install bat
 brew install bat
-echo "alias cat=bat" >> ~/.zshrc
+echo "alias cat=$(brew --prefix)/bin/bat" >> ~/.zshrc
+echo "alias ccat=/bin/cat" >> ~/.zshrc
 
 # Install fd
 brew install fd

@@ -4,24 +4,22 @@ yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 sudo yabai --load-sa
 
 # mission-control desktop labels
-yabai -m space 1 --label web
-yabai -m space 2 --label terminal
-yabai -m space 3 --label code
-yabai -m space 4 --label devtools
-yabai -m space 5 --label notes
-yabai -m space 6 --label mail
-yabai -m space 7 --label chat
+# yabai -m space 1 --label web
+# yabai -m space 2 --label terminal
+# yabai -m space 3 --label code
+# yabai -m space 4 --label devtools
+# yabai -m space 5 --label notes
+# yabai -m space 6 --label mail
+# yabai -m space 7 --label chat
 
 # window rules
-yabai -m rule --add app="^Firefox$" space=web
-yabai -m rule --add app="^Alacritty$" space=terminal
-yabai -m rule --add app="PyCharm" manage=off
-yabai -m rule --add app="PyCharm" title="( – )" space=code manage=on
-yabai -m rule --add app="^(dev-tools|DevToys|Docker Desktop)$" space=devtools
-yabai -m rule --add app="^(Obsidian|KeePassXC)$" space=notes
-yabai -m rule --add app="^Spark Desktop$" space=mail
-yabai -m rule --add app="^(Slack|Calendar)$" space=chat
-yabai -m rule --add app="^(Calculator|System Settings|Archive Utility|Telegram)$" manage=off
+# yabai -m rule --add app="^Firefox$" space=web
+# yabai -m rule --add app="^Alacritty$" space=terminal
+# yabai -m rule --add app="^(dev-tools|DevToys|Docker Desktop)$" space=devtools
+# yabai -m rule --add app="^(Obsidian|KeePassXC)$" space=notes
+# yabai -m rule --add app="^Spark Desktop$" space=mail
+# yabai -m rule --add app="^(Slack|Calendar)$" space=chat
+yabai -m rule --add app="^(Calculator|System Settings|Archive Utility|Telegram|PyCharm)$" manage=off
 yabai -m rule --add app="^IINA$" manage=off border=off sticky=on layer=above opacity=1.0 grid=8:8:6:0:2:2
 
 yabai -m config                              \

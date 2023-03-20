@@ -5,7 +5,7 @@ hs.hotkey.bind(hyper, 'F', function ()
 end)
 
 hs.hotkey.bind(hyper,  'P', function()
-  hs.application.launchOrFocus('PyCharm CE')
+  hs.application.launchOrFocus('PyCharm')
 end)
 
 hs.hotkey.bind(hyper,  'A', function()

@@ -62,8 +62,9 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     - Spark Mail Client
     - Monitor Control
     - Latest
-    - PyCharm CE
+    - PyCharm
     - DevToys
+    - Docker
     <br/><br/>
     ```
     make install
@@ -75,8 +76,10 @@ My working environment configs and install scripts. macOS and zsh specific. Test
 
 ## Checklist
 
+- Turn on tap to click `Trackpad` -> `Tap to click`
+- Turn on three fingers drag&drop `Accessibility` `Pointer Control` -> `Trackpad Options` -> `Dragging Style`
+- Use the Caps Lock to switch input sources `Keyboard` -> `Input Sources` -> `Edit`
+- Prevent automatic sleeping on power adapter when the display is off `Displays` -> `Advanced`
 - Turn off Spotlight indexing `Siri & Spotlight` -> `Spotlight privacy` drag&drop Macintosh HD
 - Deactivate Spotlight hotkeys `Keyboard` -> `Keyboard shortcuts` -> `Spotlight`
-- Activate Raycast hotkey
-- Open AltTab, Karabiner-Elements, Monitor Control, Raycast, Hammerspoon and grant access in `Privacy & Security`
 - Install [Dev Tools X](https://github.com/fosslife/devtools-x) if needed

@@ -36,9 +36,11 @@ brew install --cask hiddenbar
 
 # Install AltTab
 brew install --cask alt-tab
+open -a alttab
 
 # Install Raycast
 brew install --cask raycast
+open -a raycast
 
 # Install The Unarchiver
 brew install --cask the-unarchiver
@@ -50,12 +52,14 @@ brew services start koekeishiya/formulae/yabai
 # Install Hammerspoon
 brew install --cask hammerspoon
 defaults write org.hammerspoon.Hammerspoon MJConfigFile "~/.config/hammerspoon/init.lua"
+open -a hammerspoon
 
 # Install Selfcontrol
 brew install --cask selfcontrol
 
 # Install Karabiner-Elements
 brew install --cask karabiner-elements
+open -a karabiner-elements
 
 # Install Slack
 brew install --cask slack
@@ -65,12 +69,16 @@ brew install --cask readdle-spark
 
 # Install Monitor Control
 brew install --cask monitorcontrol
+open -a monitorcontrol
 
 # Install Latest
 brew install --cask latest
 
-# Install PyCharm CE
-brew install --cask pycharm-ce
+# Install PyCharm
+brew install --cask pycharm
 
 # Install DevToys
 brew install --cask devtoys
+
+# Install Docker
+brew install --cask docker
