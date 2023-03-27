@@ -45,7 +45,7 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     cask apps
     - Sublime Text
     - Meslo Nerd font
-    - Alacritty terminal
+    - Kitty
     - Firefox
     - KeePassXC
     - Obsidian

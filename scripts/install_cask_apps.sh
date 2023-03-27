@@ -13,8 +13,8 @@ brew install --cask sublime-text
 brew tap homebrew/cask-fonts
 brew install --cask font-meslo-lg-nerd-font
 
-# Install Alacritty Terminal
-brew install --cask alacritty
+# Install Kitty
+brew install --cask kitty
 
 # Install Firefox
 brew install --cask firefox
