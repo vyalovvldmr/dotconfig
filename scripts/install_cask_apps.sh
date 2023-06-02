@@ -82,3 +82,6 @@ brew install --cask devtoys
 
 # Install Docker
 brew install --cask docker
+
+# Install Visual Studio Code
+brew install --cask visual-studio-code

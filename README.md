@@ -65,6 +65,7 @@ My working environment configs and install scripts. macOS and zsh specific. Test
     - PyCharm
     - DevToys
     - Docker
+    - Visual Studio Code
     <br/><br/>
     ```
     make install

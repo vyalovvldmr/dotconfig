@@ -24,6 +24,7 @@
    changed = green
    untracked = red
 [core]
+    editor = nvim
     autocrlf = input
     ignorecase = false
     whitespace = cr-at-eol
