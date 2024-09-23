@@ -45,6 +45,7 @@
           "docker"
           "sublime-text"
           "obsidian"
+          "reaper"
         ];
       };
 
