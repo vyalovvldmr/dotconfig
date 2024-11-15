@@ -8,3 +8,6 @@ install:
 
 init:
 	@./scripts/init_git.sh
+
+rebuild:
+	@darwin-rebuild switch --flake .
