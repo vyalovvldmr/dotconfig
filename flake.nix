@@ -197,19 +197,15 @@
               "Bluetooth" = 18;  # show bluetooth icon in menu bar
               "BatteryShowPercentage" = 1;  # battery show percentage
             };
-          };
-
-          CustomSystemPreferences = {
-            "com.apple.desktopservices" = {
-              # Avoid creating .DS_Store files on network or USB volumes
-              DSDontWriteNetworkStores = true;
-              DSDontWriteUSBStores = true;
-            };
-
             "com.apple.finder" = {
               NewWindowTarget = "PfHm";
               ShowRecentTags = false;
               DisableAllAnimations = true;
+            };
+            "com.apple.desktopservices" = {
+              # Avoid creating .DS_Store files on network or USB volumes
+              DSDontWriteNetworkStores = true;
+              DSDontWriteUSBStores = true;
             };
           };
         };
