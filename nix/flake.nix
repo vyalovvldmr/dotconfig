@@ -13,7 +13,6 @@
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
       environment.systemPackages = with pkgs; [
-        helix
       ];
       environment.variables.EDITOR = "hx";
 
@@ -32,6 +31,30 @@
 
         taps = [
           "homebrew/services"
+          "satrik/togglemute"
+        ];
+
+        brews = [
+          "openssl@3"
+          "pkg-config"
+          "lazydocker"
+          "helix"
+          "zellij"
+          "zsh-autosuggestions"
+          "zsh-history-substring-search"
+          "oh-my-posh"
+          "node"
+          "helm"
+          "docker"
+          "docker-compose"
+          "colima"
+          "kubectl"
+          "minikube"
+          "htop"
+          {
+            name = "libpq";
+            link = true;
+          }
         ];
 
         casks = [
@@ -39,13 +62,26 @@
           "firefox"
           "visual-studio-code"
           "telegram"
-          "kitty"
           "keepassxc"
           "slack"
-          "docker"
           "sublime-text"
           "obsidian"
-          "reaper"
+          "openvpn-connect"
+          "tidal"
+          "postman"
+          "google-chrome"
+          {
+            name = "alacritty";
+            args = { no_quarantine = true; };
+          }
+          {
+            name = "vial";
+            args = { no_quarantine = true; };
+          }
+          {
+            name = "togglemute";
+            args = { no_quarantine = true; };
+          }
         ];
       };
 
@@ -159,11 +195,11 @@
   {
     # Build darwin flake using:
     # $ darwin-rebuild build --flake .#simple
-    darwinConfigurations."Vladimirs-MacBook-Air" = nix-darwin.lib.darwinSystem {
+    darwinConfigurations."vladimir-macbook-pro" = nix-darwin.lib.darwinSystem {
       modules = [ configuration ];
     };
 
     # Expose the package set, including overlays, for convenience.
-    darwinPackages = self.darwinConfigurations."Vladimirs-MacBook-Air".pkgs;
+    darwinPackages = self.darwinConfigurations."vladimir-macbook-pro".pkgs;
   };
 }
