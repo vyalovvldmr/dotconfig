@@ -71,6 +71,10 @@
           "postman"
           "google-chrome"
           {
+            name = "mos";
+            args = { no_quarantine = true; };
+          }
+          {
             name = "alacritty";
             args = { no_quarantine = true; };
           }
