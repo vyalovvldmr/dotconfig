@@ -123,6 +123,9 @@
           /System/Library/PrivateFrameworks/SystemAdministration.framework/Resources/activateSettings -u
         '';
 
+        # Disable the startup chime on boot
+        startup.chime = false;
+
         defaults = {
           dock = {
             autohide = true;

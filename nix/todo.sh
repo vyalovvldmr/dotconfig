@@ -89,9 +89,6 @@ defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM HH:mm"
 mkdir -p $HOME/screenshots
 defaults write com.apple.screencapture location -string "$HOME/screenshots"
 
-# Disable the startup chime on boot
-sudo nvram StartupMute=%01
-
 # Avoid creating .DS_Store files on network or USB volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
