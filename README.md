@@ -5,11 +5,11 @@ My working environment configs
 
 1. Change hostname:
 
-```
-sudo scutil --set HostName <new host name>
-sudo scutil --set LocalHostName <new host name>
-sudo scutil --set ComputerName <new name>
-```
+    ```shell
+    sudo scutil --set HostName <new host name>
+    sudo scutil --set LocalHostName <new host name>
+    sudo scutil --set ComputerName <new name>
+    ```
 
 1. Edit hostname in the nix file
 
@@ -17,8 +17,8 @@ sudo scutil --set ComputerName <new name>
 
 1. Run command
 
-```
-make install
-```
+    ```shell
+    make install
+    ```
 
 1. Turn FileVault on
