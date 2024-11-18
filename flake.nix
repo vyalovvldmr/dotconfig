@@ -51,6 +51,7 @@
           "kubectl"
           "minikube"
           "htop"
+          "telnet"
           {
             name = "libpq";
             link = true;
@@ -70,6 +71,7 @@
           "tidal"
           "postman"
           "google-chrome"
+          "dbeaver-community"
           {
             name = "mos";
             args = { no_quarantine = true; };
