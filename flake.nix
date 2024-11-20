@@ -210,7 +210,7 @@
               DSDontWriteUSBStores = true;
             };
             ".GlobalPreferences" = {
-              "com.apple.mouse.scaling" = 5.0;
+              "com.apple.mouse.scaling" = 2.5;
             };
           };
         };
