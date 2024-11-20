@@ -15,6 +15,14 @@
 
   outputs = inputs@{ self, darwin, nixpkgs, home-manager }:
   let
+    username = "vladimir";
+    useremail = "vyalov.v@gmail.com";
+    hostname = "vladimir-macbook-air";
+    specialArgs =
+      inputs
+      // {
+        inherit username useremail hostname;
+      };
     configuration = { pkgs, ... }: {
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
@@ -225,12 +233,18 @@
     };
   in
   {
-    # Build darwin flake using:
-    # $ darwin-rebuild build --flake .#simple
     darwinConfigurations."vladimir-macbook-air" = darwin.lib.darwinSystem {
+      inherit specialArgs;
       modules = [
         configuration
-        
+        ./modules/host-users.nix
+        home-manager.darwinModules.home-manager
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.extraSpecialArgs = specialArgs;
+          home-manager.users."vladimir" = import ./home;
+        }
       ];
     };
 
