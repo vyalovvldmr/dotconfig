@@ -52,6 +52,7 @@
           "minikube"
           "htop"
           "telnet"
+          "just"
           {
             name = "libpq";
             link = true;
