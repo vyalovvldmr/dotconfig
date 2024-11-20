@@ -209,6 +209,9 @@
               DSDontWriteNetworkStores = true;
               DSDontWriteUSBStores = true;
             };
+            ".GlobalPreferences" = {
+              "com.apple.mouse.scaling" = 5.0;
+            };
           };
         };
       };
@@ -217,11 +220,11 @@
   {
     # Build darwin flake using:
     # $ darwin-rebuild build --flake .#simple
-    darwinConfigurations."vladimir-macbook-pro" = nix-darwin.lib.darwinSystem {
+    darwinConfigurations."vladimir-macbook-air" = nix-darwin.lib.darwinSystem {
       modules = [ configuration ];
     };
 
     # Expose the package set, including overlays, for convenience.
-    darwinPackages = self.darwinConfigurations."vladimir-macbook-pro".pkgs;
+    darwinPackages = self.darwinConfigurations."vladimir-macbook-air".pkgs;
   };
 }
