@@ -233,7 +233,7 @@
     };
   in
   {
-    darwinConfigurations."vladimir-macbook-air" = darwin.lib.darwinSystem {
+    darwinConfigurations."${hostname}" = darwin.lib.darwinSystem {
       inherit specialArgs;
       modules = [
         configuration
@@ -243,12 +243,12 @@
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
           home-manager.extraSpecialArgs = specialArgs;
-          home-manager.users."vladimir" = import ./home;
+          home-manager.users.${username} = import ./home;
         }
       ];
     };
 
     # Expose the package set, including overlays, for convenience.
-    darwinPackages = self.darwinConfigurations."vladimir-macbook-air".pkgs;
+    darwinPackages = self.darwinConfigurations."${hostname}".pkgs;
   };
 }
