@@ -18,10 +18,11 @@
     username = "vladimir";
     useremail = "vyalov.v@gmail.com";
     hostname = "vladimir-macbook-air";
+    git_username = "Vladimir Vialov";
     specialArgs =
       inputs
       // {
-        inherit username useremail hostname;
+        inherit username useremail hostname git_username;
       };
     configuration = { pkgs, ... }: {
       # List packages installed in system profile. To search by name, run:

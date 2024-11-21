@@ -3,7 +3,7 @@
 {
   # import sub modules
   imports = [
-
+    ./git.nix
   ];
 
   home = {
