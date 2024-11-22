@@ -39,7 +39,8 @@
         enable = true;
 
         onActivation = {
-          autoUpdate = false;
+          autoUpdate = true;
+          upgrade = true;
           # 'zap': uninstalls all formulae(and related files) not listed here.
           cleanup = "zap";
         };
@@ -60,11 +61,6 @@
           "oh-my-posh"
           "node"
           "helm"
-          "docker"
-          "docker-compose"
-          "colima"
-          "kubectl"
-          "minikube"
           "htop"
           "telnet"
           "just"
@@ -88,6 +84,8 @@
           "postman"
           "google-chrome"
           "dbeaver-community"
+          # "orbstack"
+          "docker"
           {
             name = "mos";
             args = { no_quarantine = true; };
