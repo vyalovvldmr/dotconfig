@@ -170,7 +170,7 @@
 
           NSGlobalDomain = {
             "com.apple.trackpad.scaling" = 3.0;  # trackpad tracking speed (0.0 - 3.0), default = 1.0
-            KeyRepeat = 3;  # minimum is 2 (30 ms), maximum is 120 (1800 ms)
+            KeyRepeat = 2;  # minimum is 2 (30 ms), maximum is 120 (1800 ms)
             InitialKeyRepeat = 15;  # minimum is 15 (225 ms), maximum is 120 (1800 ms)          
             AppleShowAllFiles = true;  # show hidden files
             NSDocumentSaveNewDocumentsToCloud = false;  # home directory is opened in the fileviewer dialog when saving a new document instead of iCloud
@@ -224,7 +224,7 @@
               DSDontWriteUSBStores = true;
             };
             ".GlobalPreferences" = {
-              "com.apple.mouse.scaling" = 2.5;
+              "com.apple.mouse.scaling" = 1.5;
             };
           };
         };
