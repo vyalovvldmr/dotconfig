@@ -3,7 +3,9 @@
 {
   # import sub modules
   imports = [
+    ./shell.nix
     ./git.nix
+    ./oh_my_posh.nix
   ];
 
   home = {
