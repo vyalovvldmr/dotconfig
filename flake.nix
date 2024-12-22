@@ -37,6 +37,7 @@
       # But on macOS, homebrew has a much larger selection of apps than nixpkgs, especially for GUI apps!
       homebrew = {
         enable = true;
+        caskArgs.no_quarantine = true;
 
         onActivation = {
           autoUpdate = true;
@@ -86,22 +87,10 @@
           "dbeaver-community"
           # "orbstack"
           "docker"
-          {
-            name = "mos";
-            args = { no_quarantine = true; };
-          }
-          {
-            name = "alacritty";
-            args = { no_quarantine = true; };
-          }
-          {
-            name = "vial";
-            args = { no_quarantine = true; };
-          }
-          {
-            name = "togglemute";
-            args = { no_quarantine = true; };
-          }
+          "mos"
+          "alacritty"
+          "vial"
+          "togglemute"
         ];
       };
 
