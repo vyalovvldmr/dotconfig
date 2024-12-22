@@ -30,20 +30,19 @@
         bindkey '^[[F' end-of-line
         bindkey '^[[3~' delete-char
 
-        alias ls=eza
-        alias ll="eza -alh"
-        alias tree="exa --tree"
-        alias cat=$(brew --prefix)/bin/bat
-        alias ccat=/bin/cat
         eval "$(zoxide init zsh)"
-        alias cd=z
-        alias zz="z -"
-        alias x="cargo xtask"
-        alias k=kubectl
     '';
   };
 
   home.shellAliases = {
     k = "kubectl";
+    ls = "eza";
+    ll = "eza -alh";
+    tree = "exa --tree";
+    cat = "$(brew --prefix)/bin/bat";
+    ccat = "/bin/cat";
+    cd = "z";
+    zz = "z -";
+    x = "cargo xtask";
   };
 }
