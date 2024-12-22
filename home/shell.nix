@@ -20,6 +20,15 @@
         bindkey '^[[H' beginning-of-line
         bindkey '^[[F' end-of-line
         bindkey '^[[3~' delete-char
+
+        alias ls=eza
+        alias ll="eza -alh"
+        alias tree="exa --tree"
+        alias cat=$(brew --prefix)/bin/bat
+        alias ccat=/bin/cat
+        eval "$(zoxide init zsh)"
+        alias cd=z
+        alias zz="z -"
     '';
   };
 
