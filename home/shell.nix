@@ -38,7 +38,7 @@
     k = "kubectl";
     ls = "eza";
     ll = "eza -alh";
-    tree = "exa --tree";
+    tree = "eza --tree";
     cat = "$(brew --prefix)/bin/bat";
     ccat = "/bin/cat";
     cd = "z";
