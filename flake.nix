@@ -48,39 +48,46 @@
 
         taps = [
           "homebrew/services"
+          "int128/kubelogin"
+          "norwoodj/tap"
           "satrik/togglemute"
         ];
 
         brews = [
-          "openssl@3"
-          "pkg-config"
-          "lazydocker"
+          "bat"
+          "dua-cli"
+          "duf"
+          "eza"
+          "fd"
+          "fzf"
           "helix"
-          "zellij"
-          "zsh-autosuggestions"
-          "zsh-history-substring-search"
-          "oh-my-posh"
-          "node"
           "helm"
           "htop"
-          "telnet"
+          "int128/kubelogin/kubelogin"
           "just"
-          "rustup"
-          "unar"
-          "mc"
-          "xh"
-          "eza"
-          "bat"
-          "fd"
-          "duf"
-          "dua-cli"
-          "zoxide"
-          "fzf"
-          "scc"
+          "lazydocker"
           {
             name = "libpq";
             link = true;
           }
+          "logcli"
+          "mc"
+          "mongosh"
+          "node"
+          "norwoodj/tap/helm-docs"
+          "oh-my-posh"
+          "openssl@3"
+          "pkg-config"
+          "rustup"
+          "scc"
+          "stern"
+          "telnet"
+          "unar"
+          "xh"
+          "zellij"
+          "zoxide"
+          "zsh-autosuggestions"
+          "zsh-history-substring-search"
         ];
 
         casks = [
