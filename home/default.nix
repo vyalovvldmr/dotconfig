@@ -5,6 +5,7 @@
   imports = [
     ./git.nix
     ./shell.nix
+    ./alacritty.nix
   ];
 
   home = {
