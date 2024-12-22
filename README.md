@@ -18,7 +18,7 @@ My working environment configs
 1. Run command
 
     ```shell
-    make install
+    just install
     ```
 
 1. Turn FileVault on
