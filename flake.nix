@@ -24,12 +24,18 @@
       // {
         inherit username useremail hostname git_username;
       };
-    configuration = { pkgs, ... }: {
+    configuration = { pkgs, lib, ... }: {
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
       environment.systemPackages = with pkgs; [
       ];
       environment.variables.EDITOR = "hx";
+
+      # do garbage collection weekly to keep disk usage low
+      nix.gc = {
+        automatic = lib.mkDefault true;
+        options = lib.mkDefault "--delete-older-than 7d";
+      };
 
       #  TODO To make this work, homebrew need to be installed manually, see https://brew.sh
       # 
