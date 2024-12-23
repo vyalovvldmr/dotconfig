@@ -6,7 +6,7 @@
         eval "$(/opt/homebrew/bin/brew shellenv)"
 
         if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
-            eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/unicorn.omp.json)"
+            eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/unicorn.omp.json)"
         fi
 
         source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh

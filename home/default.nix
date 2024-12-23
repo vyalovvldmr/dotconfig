@@ -6,6 +6,7 @@
     ./git.nix
     ./shell.nix
     ./alacritty.nix
+    ./oh-my-posh.nix
   ];
 
   home = {

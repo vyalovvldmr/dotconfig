@@ -93,7 +93,6 @@
         casks = [
           "alacritty"
           "dbeaver-community"
-          "devtoys"
           "docker"
           "firefox"
           "font-meslo-lg-nerd-font"
