@@ -218,6 +218,10 @@
           screencapture = {
             location = "~/Pictures";
           };
+
+          controlcenter = {
+            NowPlaying = false;
+          };
           
           ActivityMonitor.ShowCategory = 100;  # show all processes
           
