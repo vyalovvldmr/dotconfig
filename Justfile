@@ -4,6 +4,7 @@ install:
 	@echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zshrc
 	@source ~/.zshrc
 	@nix run nix-darwin -- switch --flake .
+	@sudo mdutil -a -i off
 
 rebuild:
 	@darwin-rebuild switch --flake .
