@@ -71,6 +71,7 @@
           "htop"
           "int128/kubelogin/kubelogin"
           "just"
+          "k3d"
           "lazydocker"
           {
             name = "libpq";
@@ -171,6 +172,11 @@
             appswitcher-all-displays = true;  # display the appswitcher on all displays
             minimize-to-application = true;  # minimize windows into their application icon
             mineffect = "scale";  # change minimize/maximize window effect
+            expose-animation-duration = 0.1;
+          };
+
+          universalaccess = {
+            reduceMotion = true;
           };
 
           finder = {
