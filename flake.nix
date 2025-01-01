@@ -175,10 +175,6 @@
             expose-animation-duration = 0.1;
           };
 
-          universalaccess = {
-            reduceMotion = true;
-          };
-
           finder = {
             QuitMenuItem = true;  # allow quitting Finder via ⌘ + Q; doing so will also hide desktop icons
             _FXShowPosixPathInTitle = true;  # show full path in finder title
