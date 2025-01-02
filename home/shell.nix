@@ -32,6 +32,8 @@
 
         eval "$(zoxide init zsh)"
         export PATH="$HOME/.cargo/bin:$PATH"
+
+        neofetch
     '';
   };
 
@@ -45,5 +47,10 @@
     cd = "z";
     zz = "z -";
     x = "cargo xtask";
+  };
+
+  # Don't show the "Last login" message for every new terminal.
+  home.file.".hushlogin" = {
+    text = "";
   };
 }

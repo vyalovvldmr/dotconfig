@@ -80,6 +80,7 @@
           "logcli"
           "mc"
           "mongosh"
+          "neofetch"
           "node"
           "norwoodj/tap/helm-docs"
           "oh-my-posh"

@@ -30,3 +30,6 @@ blue    = '#7dc6bf'
 magenta = '#6c71c4'
 cyan    = '#35434d'
 white   = '#ffffff'
+
+[window]
+decorations = "None"
