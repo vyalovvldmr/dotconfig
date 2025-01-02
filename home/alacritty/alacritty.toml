@@ -33,3 +33,4 @@ white   = '#ffffff'
 
 [window]
 decorations = "None"
+option_as_alt = "Both"
