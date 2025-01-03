@@ -28,6 +28,7 @@
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
       environment.systemPackages = with pkgs; [
+        rustup
       ];
       environment.variables.EDITOR = "hx";
 
@@ -86,7 +87,6 @@
           "oh-my-posh"
           "openssl@3"
           "pkg-config"
-          "rustup"
           "scc"
           "stern"
           "telnet"
