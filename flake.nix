@@ -62,6 +62,7 @@
 
         brews = [
           "bat"
+          "broot"
           "dua-cli"
           "duf"
           "eza"
@@ -79,7 +80,6 @@
             link = true;
           }
           "logcli"
-          "mc"
           "mongosh"
           "neofetch"
           "node"
