@@ -6,6 +6,7 @@
     ./git.nix
     ./shell.nix
     ./alacritty.nix
+    ./helix.nix
     ./oh-my-posh.nix
   ];
 
