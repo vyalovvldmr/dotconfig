@@ -27,5 +27,9 @@
     source = ./alacritty;
     recursive = true;
   };
+  home.file."Library/KeyBindings" = {
+    source = ./key_bindings;
+    recursive = true;
+  };
   programs.home-manager.enable = true;
 }
