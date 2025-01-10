@@ -15,7 +15,6 @@ jobs:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v4
-    - name: Install Just
-      run: curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | bash -s -- --to /tmp
+    - uses: extractions/setup-just@v2
     - name: Test Install
-      run: /tmp/just install
+      run: just install
