@@ -23,8 +23,3 @@ My working environment configs
 
 1. Turn FileVault on
 
-1. Manual Steps
-
-    - Turn off Spotlight's hotkeys
-    - Change Raycast settings to use hotkey `cmd + space`
-

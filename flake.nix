@@ -112,7 +112,7 @@
           "obsidian"
           "openvpn-connect"
           "postman"
-          "raycast"
+          "rectangle"
           "slack"
           "sublime-text"
           "telegram"
