@@ -31,5 +31,9 @@
     source = ./key_bindings;
     recursive = true;
   };
+  home.file."Library/Application\ Support/Rectangle" = {
+    source = ./rectangle;
+    recursive = true;
+  };
   programs.home-manager.enable = true;
 }
