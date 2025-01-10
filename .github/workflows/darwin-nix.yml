@@ -9,6 +9,7 @@ on:
 env:
   CI: 1
   NONINTERACTIVE: 1
+  NIX_INSTALLER_NO_CONFIRM: true
     
 jobs:
   install-on-mac:
