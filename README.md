@@ -25,6 +25,7 @@ My working environment configs
 
     ```shell
     /tmp/just install
+    rm -rf /tmp/just
     ```
 
 1. Turn FileVault on
