@@ -18,7 +18,7 @@ My working environment configs
 1. Install temporary just for single use
 
     ```shell
-    curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | bash -s -- --to /tmp/just
+    curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | bash -s -- --to /tmp
     ```
 
 1. Run command
