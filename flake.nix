@@ -70,7 +70,6 @@
           "fzf"
           "helix"
           "helm"
-          "htop"
           "int128/kubelogin/kubelogin"
           "just"
           "k3d"
@@ -80,6 +79,7 @@
             link = true;
           }
           "logcli"
+          "mactop"
           "mongosh"
           "neofetch"
           "node"
