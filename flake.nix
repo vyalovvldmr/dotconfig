@@ -58,6 +58,8 @@
           "int128/kubelogin"
           "norwoodj/tap"
           "satrik/togglemute"
+          "tilt-dev/tap"
+          "fluxcd/tap"
         ];
 
         brews = [
@@ -67,6 +69,7 @@
           "duf"
           "eza"
           "fd"
+          "fluxcd/tap/flux"
           "fzf"
           "helix"
           "helm"
@@ -90,6 +93,9 @@
           "scc"
           "stern"
           "telnet"
+          "tilt-dev/tap/tilt"
+          "minikube"
+          "kind"
           "unar"
           "xh"
           "zellij"
@@ -99,6 +105,10 @@
         ];
 
         casks = [
+          {
+            name = "mqtt-explorer";
+            greedy = true;
+          }
           {
             name = "alacritty";
             greedy = true;
