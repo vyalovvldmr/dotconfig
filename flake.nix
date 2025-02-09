@@ -99,28 +99,90 @@
         ];
 
         casks = [
-          "alacritty"
-          "dbeaver-community"
-          "docker"
-          "firefox"
-          "font-meslo-lg-nerd-font"
-          "google-chrome"
-          "iina"
-          "keepassxc"
-          "mos"
+          {
+            name = "alacritty";
+            greedy = true;
+          }
+          {
+            name = "dbeaver-community";
+            greedy = true;
+          }          {
+            name = "docker";
+            greedy = true;
+          }
+          {
+            name = "firefox";
+            greedy = true;
+          }
+          {
+            name = "font-meslo-lg-nerd-font";
+            greedy = true;
+          }
+          {
+            name = "google-chrome";
+            greedy = true;
+          }
+          {
+            name = "iina";
+            greedy = true;
+          }
+          {
+            name = "keepassxc";
+            greedy = true;
+          }
+          {
+            name = "mos";
+            greedy = true;
+          }
           # "orbstack"
-          "obsidian"
-          "openvpn-connect"
-          "postman"
-          "rectangle"
-          "slack"
-          "spotify"
-          "sublime-text"
-          "telegram"
-          "the-unarchiver"
-          "togglemute"
-          "vial"
-          "visual-studio-code"
+          {
+            name = "obsidian";
+            greedy = true;
+          }
+          {
+            name = "openvpn-connect";
+            greedy = true;
+          }
+          {
+            name = "postman";
+            greedy = true;
+          }
+          {
+            name = "rectangle";
+            greedy = true;
+          }
+          {
+            name = "slack";
+            greedy = true;
+          }
+          {
+            name = "spotify";
+            greedy = true;
+          }
+          {
+            name = "sublime-text";
+            greedy = true;
+          }
+          {
+            name = "telegram";
+            greedy = true;
+          }
+          {
+            name = "the-unarchiver";
+            greedy = true;
+          }
+          {
+            name = "togglemute";
+            greedy = true;
+          }
+          {
+            name = "vial";
+            greedy = true;
+          }
+          {
+            name = "visual-studio-code";
+            greedy = true;
+          }
         ];
       };
 
