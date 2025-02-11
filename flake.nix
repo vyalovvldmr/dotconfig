@@ -102,6 +102,7 @@
           "zoxide"
           "zsh-autosuggestions"
           "zsh-history-substring-search"
+          "watch"
         ];
 
         casks = [
