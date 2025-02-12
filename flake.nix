@@ -194,6 +194,10 @@
             name = "visual-studio-code";
             greedy = true;
           }
+          {
+            name = "openlens";
+            greedy = true;
+          }
         ];
       };
 
