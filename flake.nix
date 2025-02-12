@@ -60,6 +60,7 @@
           "satrik/togglemute"
           "tilt-dev/tap"
           "fluxcd/tap"
+          "derailed/k9s"
         ];
 
         brews = [
@@ -103,6 +104,7 @@
           "zsh-autosuggestions"
           "zsh-history-substring-search"
           "watch"
+          "derailed/k9s/k9s"
         ];
 
         casks = [
@@ -192,10 +194,6 @@
           }
           {
             name = "visual-studio-code";
-            greedy = true;
-          }
-          {
-            name = "openlens";
             greedy = true;
           }
         ];
