@@ -113,6 +113,10 @@
             greedy = true;
           }
           {
+            name = "anki";
+            greedy = true;
+          }
+          {
             name = "alacritty";
             greedy = true;
           }
