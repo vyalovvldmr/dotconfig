@@ -113,6 +113,10 @@
             greedy = true;
           }
           {
+            name = "homerow";
+            greedy = true;
+          }
+          {
             name = "anki";
             greedy = true;
           }
