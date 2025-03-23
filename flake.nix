@@ -61,6 +61,7 @@
           "tilt-dev/tap"
           "fluxcd/tap"
           "derailed/k9s"
+          "qmk/qmk"
         ];
 
         brews = [
@@ -105,6 +106,7 @@
           "zsh-history-substring-search"
           "watch"
           "derailed/k9s/k9s"
+          "qmk/qmk/qmk"
         ];
 
         casks = [
@@ -145,6 +147,10 @@
           }
           {
             name = "iina";
+            greedy = true;
+          }
+          {
+            name = "qmk-toolbox";
             greedy = true;
           }
           {
